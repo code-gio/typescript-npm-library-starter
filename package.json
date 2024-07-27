@@ -1,0 +1,31 @@
+{
+  "name": "typescript-npm-library-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-gio/typescript-npm-library-starter.git"
+  },
+  "version": "0.0.1",
+  "description": "A starter template for creating a TypeScript library for npm",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "npm run build && changeset publish",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "npm",
+    "library",
+    "starter"
+  ],
+  "author": "Giovani Rodriguez",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {}
+}
