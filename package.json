@@ -27,5 +27,7 @@
     "tsup": "^8.2.3",
     "typescript": "^5.5.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  }
 }
